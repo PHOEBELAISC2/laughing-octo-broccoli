@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI香氣配方師</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>AI香氣配方師</h1>
+    <form id="perfumeForm">
+      <label>1. 想要的香氛風格？</label>
+      <select id="style" required>
+        <option value="花香">花香</option>
+        <option value="果香">果香</option>
+        <option value="木質">木質</option>
+        <option value="清新">清新</option>
+      </select>
+
+      <label>2. 使用場合？</label>
+      <select id="occasion" required>
+        <option value="日常">日常</option>
+        <option value="約會">約會</option>
+        <option value="運動">運動</option>
+        <option value="放鬆">放鬆</option>
+      </select>
+
+      <label>3. 想表現的情緒？</label>
+      <select id="mood" required>
+        <option value="開朗">開朗</option>
+        <option value="自信">自信</option>
+        <option value="沈穩">沈穩</option>
+        <option value="浪漫">浪漫</option>
+      </select>
+
+      <label>4. 最喜歡的香味類型？</label>
+      <select id="favorite" required>
+        <option value="柑橘">柑橘</option>
+        <option value="玫瑰">玫瑰</option>
+        <option value="檀香">檀香</option>
+        <option value="薄荷">薄荷</option>
+      </select>
+
+      <label>5. 為這支香水命名 ✏️</label>
+      <input type="text" id="name" placeholder="輸入香水名稱" required>
+
+      <button type="submit">生成香水配方</button>
+    </form>
+
+    <section id="result"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
